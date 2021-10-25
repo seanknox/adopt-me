@@ -2,14 +2,8 @@ import { Component } from "react";
 import { withRouter } from "react-router-dom";
 
 class Details extends Component {
-  // class component style. can use babel plugins to remove boilerplate
-  // babel/plugin-proposal-class-properties
-  // babel/preset-env
-  // eslint-parse
-  constructor() {
-    super();
-    this.state = { loading: true };
-  }
+  // powered by babel/plugin-proposal-class-properties
+  state = { loading: true };
 
   async componentDidMount() {
     const res = await fetch(
