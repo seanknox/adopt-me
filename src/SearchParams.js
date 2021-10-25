@@ -11,6 +11,7 @@ const SearchParams = () => {
   const [pets, setPets] = useState([]);
   const [breeds] = useBreedList(animal);
 
+  // functionally the same as class component componentDidMount
   useEffect(() => {
     requestPets();
     // eslint-disable-next-line react-hooks/exhaustive-deps
